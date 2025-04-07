@@ -1,0 +1,18 @@
+p {
+    background-color: #ffc0cb;
+    font-family: Verdana, 'DejaVu Sans', sans-serif;
+}
+
+.cooler {
+    font-size: 24px;
+}
+
+#element2 {
+    color: rgb(0, 0, 255);
+    font-size: 36px;
+}
+
+#element4 {
+    background-color: lch(86.55% 59.26 141.43);
+    font-weight: bold;
+}
