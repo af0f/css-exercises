@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Display Examples</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+
+    h2 {
+      margin-top: 40px;
+      color: #333;
+    }
+
+    .example {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 30px;
+    }
+
+    .block-example div {
+      display: block;
+      background: lightblue;
+      margin: 10px 0;
+      padding: 10px;
+    }
+
+    .inline-example span {
+      display: inline;
+      background: lightgreen;
+      padding: 10px;
+      border: 2px solid darkgreen;
+      width: 100px; /* ignored by inline */
+      height: 50px; /* ignored by inline */
+    }
+
+    .inline-block-example span {
+      display: inline-block;
+      background: lightcoral;
+      padding: 10px;
+      border: 2px solid darkred;
+      width: 100px;
+      height: 50px;
+    }
+
+    .flex-example {
+      display: flex;
+      background: #eee;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .flex-example div {
+      background: lightseagreen;
+      padding: 20px;
+      color: white;
+    }
+
+    .none-example div {
+      background: grey;
+      padding: 10px;
+      margin: 10px;
+      color: white;
+    }
+
+    .none-example .hidden {
+      display: none;
+    }
+
+    .label {
+      font-size: 0.9rem;
+      margin-top: 5px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Common CSS Display Values</h1>
+
+  <h2>1. display: block</h2>
+  <div class="example block-example">
+    <div>Block 1</div>
+    <div>Block 2</div>
+  </div>
+
+  <h2>2. display: inline</h2>
+  <div class="example inline-example">
+    <span>Inline 1</span>
+    <span>Inline 2</span>
+    <div class="label">* Width and height are ignored</div>
+  </div>
+
+  <h2>3. display: inline-block</h2>
+  <div class="example inline-block-example">
+    <span>Inline-Block 1</span>
+    <span>Inline-Block 2</span>
+    <div class="label">* Width and height are respected</div>
+  </div>
+
+  <h2>4. display: flex</h2>
+  <div class="example flex-example">
+    <div>Flex 1</div>
+    <div>Flex 2</div>
+    <div>Flex 3</div>
+  </div>
+
+  <h2>5. display: none</h2>
+  <div class="example none-example">
+    <div>Visible</div>
+    <div class="hidden">This is hidden</div>
+    <div>Also visible</div>
+  </div>
+
+</body>
+</html>
